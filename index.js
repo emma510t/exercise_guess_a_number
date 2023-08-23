@@ -13,12 +13,12 @@ function getInputValue() {
   /* document.querySelector("#number").textContent = ranNum; */
 
   if (ranNum === conInput) {
-    alert("you won!");
-    console.log("tillykke");
+    document.querySelector("#result").textContent = "Congratulations, you won!";
+    document.querySelector("body").classList.add("green");
   } else if (ranNum > conInput) {
-    alert("The number is higher");
+    document.querySelector("#result").textContent = "The number is higher.. try again";
   } else {
-    alert("The number is lower");
+    document.querySelector("#result").textContent = "The number is lower.. try again";
   }
 }
 
